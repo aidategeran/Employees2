@@ -66,6 +66,8 @@ public class Main {
 
         NumberFormat currencyInstance = NumberFormat.getCurrencyInstance();
         System.out.printf("The total payout should be %s%n", currencyInstance.format(totalSalaries));
+
+
         Comparator.
 
 
