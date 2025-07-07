@@ -42,9 +42,9 @@ public class Main {
                     System.out.println(details);
                     Matcher coderMat = coderPat.matcher(details);
                     if (coderMat.find()) {
-                        String locpd = coderMat.group("locpd");
-                        String yoe = coderMat.group("yoe");
-                        String iq = coderMat.group("iq");
+                        int locpd = Integer.parseInt(coderMat.group("locpd"));
+                        int yoe = Integer.parseInt(coderMat.group("yoe"));
+                        int iq = Integer.parseInt(coderMat.group("iq"));
                         System.out.printf("Programmer loc: %s yoe: %s iq: %s%n", locpd, yoe, iq);
                     }
                     yield 3000;
@@ -61,22 +61,8 @@ public class Main {
                 default -> 0;
             };
         }
-
-
-
         NumberFormat currencyInstance = NumberFormat.getCurrencyInstance();
         System.out.printf("The total payout should be %s%n", currencyInstance.format(totalSalaries));
-
-
-
-
-
-
-
-        
-
-        Comparator.
-
 
     }
 
