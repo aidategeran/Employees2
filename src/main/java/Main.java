@@ -112,6 +112,12 @@ public class Main {
                     String firstName = peopleMat.group("firstName");
                     System.out.printf("%s, %s: %s%n", lastName, firstName, NumberFormat.getCurrencyInstance().format(salary));
                     yield salary;
+
+
+
+
+
+                    
                 }
 
                 default -> 0;
